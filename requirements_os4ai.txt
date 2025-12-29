@@ -1,0 +1,15 @@
+# OS4AI & Tinhat Toolkit Requirements
+# Install with: pip3 install -r requirements_os4ai.txt
+
+# Core UI Framework
+streamlit>=1.28.0
+
+# Data Visualization
+plotly>=5.18.0
+
+# Numerical Computing
+numpy>=1.24.0
+
+# System utilities (for subprocess calls)
+# Note: These are built into Python, no install needed
+# subprocess, json, time, datetime, collections, os, sys, math, random, asyncio
