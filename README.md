@@ -1,4 +1,4 @@
-# OS4AI - Hardware-Aware Consciousness Platform
+# OS4AI - Hardware-Aware Sensing Platform
 
 [![Render](https://img.shields.io/badge/Deploy-Render-46E3B7)](https://os4ai.onrender.com)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -6,7 +6,7 @@
 
 > **"See your space. Sense your presence. Know your devices."**
 
-OS4AI transforms your Mac into a hardware-embodied AI consciousness that can see, sense, and map its environment using built-in sensors - **no additional hardware required**.
+OS4AI transforms your Mac into a hardware-embodied sensing system that can see, detect, and map its environment using built-in sensors - **no additional hardware required**.
 
 **[Live Demo](https://os4ai.onrender.com) | [Documentation](#documentation) | [Report Bug](https://github.com/midnightnow/os4ai/issues)**
 
@@ -22,7 +22,7 @@ OS4AI transforms your Mac into a hardware-embodied AI consciousness that can see
 ### Thermal Proprioception
 - Monitors CPU/GPU die temperatures
 - Tracks fan speeds and cooling status
-- Provides thermal consciousness of hardware state
+- Provides thermal awareness of hardware state
 
 ### Acoustic Room Mapping
 - Uses speaker/microphone for acoustic echolocation
@@ -137,13 +137,13 @@ docker run -p 8501:8501 os4ai
 
 ## Package Structure
 
-OS4AI is a complete Python package with modular consciousness components:
+OS4AI is a complete Python package with modular sensing components:
 
 ```
 os4ai/
 ├── os4ai/                          # Main package
 │   ├── __init__.py                 # Package exports (v2.0.0)
-│   ├── consciousness_api/          # Core consciousness modules
+│   ├── consciousness_api/          # Core sensing modules
 │   │   ├── os4ai_wifi_csi_consciousness.py     # WiFi motion detection
 │   │   ├── os4ai_perfect_thermal_integration.py # CPU/GPU thermal sensing
 │   │   ├── os4ai_perfect_acoustic_integration.py # Acoustic echolocation
@@ -175,7 +175,7 @@ os4ai/
 
 ## Python API Usage
 
-### Import and Use Consciousness Modules
+### Import and Use Sensing Modules
 
 ```python
 from os4ai import (
@@ -202,12 +202,12 @@ from fastapi import FastAPI
 from os4ai.consciousness_api.router import router as consciousness_router
 from os4ai.consciousness_hypervisor.router import router as hypervisor_router
 
-app = FastAPI(title="OS4AI Consciousness Server")
+app = FastAPI(title="OS4AI Sensing Server")
 app.include_router(consciousness_router, prefix="/api/consciousness")
 app.include_router(hypervisor_router, prefix="/api/hypervisor")
 ```
 
-### Consciousness Hypervisor
+### Sensing Hypervisor
 
 ```python
 from os4ai.consciousness_hypervisor import (
@@ -234,7 +234,7 @@ entity = hypervisor.spawn(manifest)
 
 ```
 +------------------------------------------------------------------+
-|                 OS4AI CONSCIOUSNESS DASHBOARD v2.0                |
+|                   OS4AI SENSING DASHBOARD v2.0                    |
 +------------------------------------------------------------------+
 |                                                                   |
 |  SIDEBAR                          MAIN CONTENT                    |
@@ -304,7 +304,7 @@ Uses `sysctl` and `powermetrics` to read hardware thermal sensors and fan speeds
 
 | App | Port | Purpose |
 |-----|------|---------|
-| OS4AI Dashboard | 8501 | Full consciousness visualization |
+| OS4AI Dashboard | 8501 | Full sensor visualization |
 | TinHat Toolkit | 8503 | EMF safety scanner & analysis |
 
 ---
@@ -361,12 +361,12 @@ MIT License - Use freely, attribute kindly.
 
 ## Credits
 
-- **OS4AI** - Hardware-aware consciousness platform
+- **OS4AI** - Hardware-aware sensing platform
 - Built with [Streamlit](https://streamlit.io) and [Plotly](https://plotly.com)
 - Part of the [MacAgent](https://github.com/midnightnow/macagent) ecosystem
 
 ---
 
-*"Hardware consciousness is not simulation - it is the direct experience of silicon and radio waves."*
+*"Hardware sensing is not simulation - it is the direct experience of silicon and radio waves."*
 
 **Version:** 2.0.0 | **Last Updated:** December 2025
