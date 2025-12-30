@@ -1,15 +1,36 @@
-# OS4AI & Tinhat Toolkit Requirements
+# OS4AI - Hardware-Aware Consciousness Platform
+# Full requirements for all modules
 # Install with: pip3 install -r requirements_os4ai.txt
 
-# Core UI Framework
+# ===== Core UI Framework =====
 streamlit>=1.28.0
 
-# Data Visualization
+# ===== Data Visualization =====
 plotly>=5.18.0
 
-# Numerical Computing
+# ===== Numerical Computing =====
 numpy>=1.24.0
+scipy>=1.11.0
 
-# System utilities (for subprocess calls)
-# Note: These are built into Python, no install needed
-# subprocess, json, time, datetime, collections, os, sys, math, random, asyncio
+# ===== Image Processing =====
+Pillow>=10.0.0
+
+# ===== FastAPI Framework (for API server) =====
+fastapi>=0.109.0
+uvicorn>=0.25.0
+websockets>=12.0
+
+# ===== Data Validation =====
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# ===== Monitoring (Optional) =====
+prometheus-client>=0.19.0
+
+# ===== macOS System Dependencies (install via Homebrew) =====
+# brew install blueutil
+# The following system commands are used:
+#   - airport (WiFi scanning, built into macOS)
+#   - sysctl (temperature reading, built into macOS)
+#   - blueutil (Bluetooth control, install via Homebrew)
+#   - osascript (AppleScript, built into macOS)
