@@ -3,7 +3,7 @@
 # OS4AI - Hardware-Aware Consciousness Platform
 # One-click installation for macOS
 #
-# Usage: curl -fsSL https://raw.githubusercontent.com/midnightnow/os4ai-consciousness/main/install.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/midnightnow/os4ai/main/install.sh | bash
 #
 
 set -e
@@ -91,7 +91,7 @@ if [[ -d "$OS4AI_DIR" ]]; then
     git pull origin main 2>/dev/null || true
 else
     echo "Cloning OS4AI..."
-    git clone https://github.com/midnightnow/os4ai-consciousness.git "$OS4AI_DIR"
+    git clone https://github.com/midnightnow/os4ai.git "$OS4AI_DIR"
 fi
 
 # Create launch scripts
